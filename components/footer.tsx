@@ -80,7 +80,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-sm">coding@nitanadhra.ac.in</span>
+                <span className="text-sm">coding@nitandhra.ac.in</span>
               </div>
             </div>
           </div>
