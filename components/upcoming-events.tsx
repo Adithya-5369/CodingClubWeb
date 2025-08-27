@@ -76,7 +76,7 @@ export default function UpcomingEvents() {
         </div>
 
         {/* Featured Event with Countdown */}
-        <div className="glass rounded-2xl p-8 mb-12">
+        {/* <div className="glass rounded-2xl p-8 mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <div className="inline-block bg-[#4A90E2] text-white px-3 py-1 rounded-full text-sm font-medium mb-4">
@@ -108,7 +108,7 @@ export default function UpcomingEvents() {
             </div>
 
             {/* Countdown Timer */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <h4 className="font-heading font-semibold text-xl mb-6 text-white">Event Starts In</h4>
               <div className="grid grid-cols-4 gap-4">
                 {Object.entries(timeLeft).map(([unit, value]) => (
@@ -122,25 +122,41 @@ export default function UpcomingEvents() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Other Upcoming Events */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {upcomingEvents.map((event, index) => (
-            <div key={index} className="glass glass-hover rounded-xl p-6 group cursor-pointer">
-              <div className={`w-3 h-3 ${event.color} rounded-full mb-4`}></div>
-              <h4 className="font-heading font-semibold text-lg mb-2 text-white group-hover:text-[#4A90E2] transition-colors">
-                {event.title}
-              </h4>
-              <div className="flex items-center gap-2 text-sm text-[#B0B0B0] mb-2">
-                <Calendar className="h-4 w-4" />
-                {event.date}
-              </div>
-              <div className="inline-block bg-[#4A90E2]/20 text-[#4A90E2] px-2 py-1 rounded text-xs font-medium">
-                {event.type}
-              </div>
+        <div className="mt-12">
+          {/* {upcomingEvents.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {upcomingEvents.map((event, index) => (
+                <div
+                  key={index}
+                  className="glass glass-hover rounded-xl p-6 group cursor-pointer"
+                >
+                  <div className={`w-3 h-3 ${event.color} rounded-full mb-4`}></div>
+                  <h4 className="font-heading font-semibold text-lg mb-2 text-white group-hover:text-[#4A90E2] transition-colors">
+                    {event.title}
+                  </h4>
+                  <div className="flex items-center gap-2 text-sm text-[#B0B0B0] mb-2">
+                    <Calendar className="h-4 w-4" />
+                    {event.date}
+                  </div>
+                  <div className="inline-block bg-[#4A90E2]/20 text-[#4A90E2] px-2 py-1 rounded text-xs font-medium">
+                    {event.type}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          ) : ( */}
+            <div className="text-center py-16 glass rounded-xl">
+              <h4 className="font-heading font-semibold text-xl text-white mb-2">
+                No Upcoming Events
+              </h4>
+              <p className="text-[#B0B0B0]">
+                Stay tuned!! new events will be announced soon!
+              </p>
+            </div>
+          {/* })} */}
         </div>
       </div>
     </section>

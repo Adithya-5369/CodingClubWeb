@@ -1,17 +1,16 @@
 import Link from "next/link"
-import { Github, Linkedin, Twitter, Mail, MapPin } from "lucide-react"
+import { Github, Linkedin, Instagram, Mail, MapPin } from "lucide-react"
 import Image from "next/image"
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/company/codingclubnitanp", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Mail, href: "mailto:coding@nitandhra.ac.in", label: "Email" },
+    { icon: Instagram, href: "https://www.instagram.com/codingclubnitanp", label: "Instagram" },
   ]
 
   const quickLinks = [
-    { href: "/about", label: "About Us" },
+    { href: "/about", label: "About" },
     { href: "/events", label: "Events" },
     { href: "/team", label: "Team" },
     { href: "/resources", label: "Resources" },
@@ -29,9 +28,9 @@ export default function Footer() {
                 alt="Coding Club, NIT Andhra Pradesh"
                 width={32}
                 height={32}
-                className="w-8 h-8"
+                className="w-12 h-12 object-cover"
               />
-              <span className="font-heading font-bold text-lg text-white">Coding Club, NIT Andhra Pradesh</span>
+              {/*<span className="font-heading font-bold text-lg text-white">Coding Club, NIT Andhra Pradesh</span>*/}
             </div>
             <p className="text-muted-foreground mb-4 leading-relaxed">
               From Code to Creativity, We Build It All. NIT Andhra Pradesh's premier coding community where innovation

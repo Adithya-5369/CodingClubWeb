@@ -9,21 +9,21 @@ import Hero3D from "./hero-3d"
 const stats = [
   {
     icon: Users,
-    value: "500+",
+    value: "50+",
     label: "Active Members",
     description: "Growing community",
     gradient: "from-blue-500 to-blue-600",
   },
   {
     icon: Calendar,
-    value: "50+",
+    value: "0+",
     label: "Events Hosted",
     description: "This academic year",
     gradient: "from-purple-500 to-purple-600",
   },
   {
     icon: Trophy,
-    value: "100+",
+    value: "10+",
     label: "Projects Built",
     description: "Open source & personal",
     gradient: "from-green-500 to-emerald-600",

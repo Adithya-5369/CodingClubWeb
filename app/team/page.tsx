@@ -8,8 +8,8 @@ import { Github, Linkedin, Twitter, Mail } from "lucide-react"
 const teamMembers = {
   coreCommittee: [
     {
-      name: "Arjun Sharma",
-      position: "President",
+      name: "Banda Tharun",
+      position: "Secretary",
       image: "/professional-male-student-president.png",
       bio: "Final year CSE student passionate about full-stack development and competitive programming.",
       skills: ["React", "Node.js", "Python", "DSA"],
@@ -104,13 +104,13 @@ const teamMembers = {
 }
 
 const facultyAdvisor = {
-  name: "Dr. Rajesh Kumar",
+  name: "Dr. K. Himabindu",
   position: "Faculty Advisor",
   department: "Computer Science & Engineering",
-  image: "/professional-faculty-advisor-professor.png",
-  bio: "Dr. Kumar has been instrumental in fostering innovation and entrepreneurship at NIT AP. With over 15 years of experience in academia and industry, he guides students in their technical journey and helps them achieve their career goals.",
-  expertise: ["Software Engineering", "Data Structures", "Algorithm Design", "Research Methodology"],
-  email: "rajesh.kumar@nitap.ac.in",
+  image: "http://nitandhra.ac.in/faculty/assets/uploads/profile_images/16909.jpg",
+  bio: "Dr. K. Himabindu is an Assistant Professor at NIT Andhra Pradesh, specializing in Artificial Intelligence and Natural Language Processing. With rich experience in academia and industry, she mentors students in cutting-edge technologies, fosters research and innovation, and guides them toward achieving their professional goals.",
+  expertise: ["Natural Language Processing through Deep Learning", "Explainable AI", "Few Shot Learning", "Educational Data Mining"],
+  email: "himabinduk@nitandhra.ac.in",
 }
 
 const hallOfFame = [
@@ -176,7 +176,10 @@ export default function TeamPage() {
                     </span>
                   ))}
                 </div>
-                <Button className="bg-[#4A90E2] hover:bg-[#5BA0F2]">
+                <Button
+                  className="bg-[#4A90E2] hover:bg-[#5BA0F2] cursor-pointer"
+                  onClick={() => (window.location.href = `mailto:${facultyAdvisor.email}`)}
+                >
                   <Mail className="mr-2 h-4 w-4" />
                   Contact
                 </Button>

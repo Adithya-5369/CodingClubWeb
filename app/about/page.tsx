@@ -1,6 +1,7 @@
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
-import { Target, Eye, Users, Award } from "lucide-react"
+import { Target, Eye, Users, Laptop2, Award } from "lucide-react"
+import Image from "next/image"
 
 export default function AboutPage() {
   const missions = [
@@ -52,7 +53,7 @@ export default function AboutPage() {
               </div>
               <p className="text-lg text-[#B0B0B0] leading-relaxed">
                 To foster a thriving, inclusive, and innovative tech community at NIT Andhra Pradesh that empowers
-                students to explore, learn, and excel in the ever-evolving world of technology — nurturing problem
+                students to explore, learn, and excel in the ever-evolving world of technology nurturing problem
                 solvers, innovators, and leaders who are globally competent, nationally relevant, and socially
                 responsible.
               </p>
@@ -60,9 +61,9 @@ export default function AboutPage() {
             <div className="glass rounded-2xl p-8">
               <div className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-[#4A90E2] to-[#50C878] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="h-10 w-10 text-white" />
+                  <Laptop2 className="h-10 w-10 text-white" />
                 </div>
-                <h3 className="font-heading font-semibold text-xl text-white mb-2">Innovation Hub</h3>
+                <h3 className="font-heading font-semibold text-xl text-white mb-2">Tech Community</h3>
                 <p className="text-[#B0B0B0]">Creating tomorrow's tech leaders today</p>
               </div>
             </div>
@@ -105,10 +106,17 @@ export default function AboutPage() {
 
           <div className="glass rounded-2xl p-8 max-w-2xl mx-auto">
             <div className="w-32 h-32 bg-gradient-to-br from-[#4A90E2] to-[#50C878] rounded-full mx-auto mb-6 flex items-center justify-center">
-              <span className="text-white font-bold text-2xl">FA</span>
+              <Image
+                src="http://nitandhra.ac.in/faculty/assets/uploads/profile_images/16909.jpg"
+                alt="Dr. K. Himabindu"
+                width={128}
+                height={128}
+                className="w-32 h-32 object-cover rounded-full"
+              />
             </div>
-            <h3 className="font-heading font-bold text-2xl text-white mb-2">Dr. Faculty Name</h3>
-            <p className="text-[#4A90E2] mb-4">Professor, Computer Science & Engineering</p>
+            <h3 className="font-heading font-bold text-2xl text-white mb-2">Dr. K. Himabindu</h3>
+            <p className="text-[#4A90E2] mb-4">Assistant Professor<br />
+            <span className="text-sm text-[#B0B0B0] mb-6"> Computer Science & Engineering, NIT Andhra Pradesh </span></p>
             <p className="text-[#B0B0B0] leading-relaxed">
               "The Coding Club represents the spirit of innovation and collaboration that defines our institution. I am
               proud to guide these talented students as they build the future of technology."

@@ -24,7 +24,7 @@ export default function Navigation() {
     { href: "/events", label: "Events" },
     { href: "/team", label: "Team" },
     { href: "/resources", label: "Resources" },
-    { href: "/blog", label: "Blog" },
+    // { href: "/blog", label: "Blog" },
   ]
 
   return (
@@ -37,26 +37,25 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <Image
-                src="/images/coding-club-logo.png"
-                alt="Coding Club, NIT Andhra Pradesh"
-                width={48}
-                height={48}
-                className="w-12 h-12 transition-transform duration-300 group-hover:scale-110"
-              />
+              <div className="w-12 h-12 overflow-hidden">
+                <Image
+                  src="/images/coding-club-logo.png"
+                  alt="Coding Club"
+                  width={48}
+                  height={48}
+                  className=" object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+              </div>
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div className="flex flex-col">
-              <span className="font-heading font-bold text-xl bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                Coding Club
-              </span>
-              <span className="font-sans text-xs text-muted-foreground -mt-1">NIT Andhra Pradesh</span>
-            </div>
+            <span className="text-white text-xl font-bold font-heading tracking-tight">
+              Coding Club
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-1">
+            <div className="ml-10 flex items-center space-x-6">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -72,7 +71,7 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 group">
+            <Button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 group">
               <Sparkles className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform duration-300" />
               Get Started
             </Button>
@@ -106,7 +105,7 @@ export default function Navigation() {
               </Link>
             ))}
             <div className="px-4 pt-4">
-              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 rounded-lg font-semibold">
+              <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold">
                 <Sparkles className="w-4 h-4 mr-2" />
                 Get Started
               </Button>
