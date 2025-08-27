@@ -37,7 +37,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <div className="w-12 h-12 overflow-hidden">
+              <div className="w-10 h-10 overflow-hidden">
                 <Image
                   src="/images/coding-club-logo.png"
                   alt="Coding Club"
