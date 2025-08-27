@@ -71,10 +71,15 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 group">
+          <Button
+            asChild
+            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 group cursor-pointer"
+          >
+            <a href="https://discord.gg/DjHkM7TMDK" target="_blank" rel="noopener noreferrer">
               <Sparkles className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform duration-300" />
               Get Started
-            </Button>
+            </a>
+          </Button>
           </div>
 
           {/* Mobile menu button */}
